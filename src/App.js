@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import "./App.scss";
+import Nav from "./nav/nav";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <div className="header-top">
+          <div>
+            <h1>오늘 뭐먹 wee ?</h1>
+          </div>
+          <div className="login-join">
+            <span>로그인</span>
+            <span>회원가입</span>
+          </div>
+        </div>
+        <Nav />
       </header>
+
+      <main>
+        <div>.</div>
+      </main>
+
+      <aside>
+        <div>.</div>
+      </aside>
+
+      <div className="clear"></div>
     </div>
   );
 }
