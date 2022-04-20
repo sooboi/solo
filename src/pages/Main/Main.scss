@@ -1,23 +1,32 @@
+@font-face {
+  font-family: "Yeongdo-Rg";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/Yeongdo-Rg.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NEXON Lv1 Gothic OTF";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "KOTRAHOPE";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2")
-    format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-.App {
+.wrapper {
   // text-align: center;
 
   header {
     padding: 10px;
     background-color: black;
+    font-family: "NEXON Lv1 Gothic OTF";
 
     .header-top {
       position: relative;
@@ -27,7 +36,7 @@
 
       h1 {
         margin-top: 15px;
-        font-family: "KOTRAHOPE";
+        font-family: "Yeongdo-Rg";
         font-size: 50px;
         color: white;
       }
@@ -45,14 +54,14 @@
   }
   main {
     background-color: red;
-    width: 70%;
+    width: 80%;
     height: 600px;
     float: left;
   }
 
   aside {
     background-color: yellowgreen;
-    width: 30%;
+    width: 20%;
     height: 600px;
     float: left;
   }
